@@ -110,11 +110,13 @@ while True:
     #Draw the game objects
     screen.fill('black')
 
+    #Draw the score
     cpu_score_surface = score_font.render(str(cpu_points), True, "white")
     player_score_surface = score_font.render(str(player_points), True, "white")
     screen.blit(cpu_score_surface,(screen_width/4,20))
     screen.blit(player_score_surface,(3*screen_width/4,20))
 
+    #Draw the game objects
     pygame.draw.aaline(screen,'white',(screen_width/2, 0), (screen_width/2, screen_height))
     pygame.draw.ellipse(screen,'white',ball)
     pygame.draw.rect(screen,'white',cpu)
