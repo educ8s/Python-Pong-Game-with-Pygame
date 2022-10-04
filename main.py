@@ -107,7 +107,7 @@ while True:
     animate_player()
     animate_cpu()
         
-    #Draw the game objects
+    #Clear the screen
     screen.fill('black')
 
     #Draw the score
